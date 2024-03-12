@@ -39,6 +39,13 @@
 			remoteGlobalIDString = D8F0F147B3386C9B8BA800C19189043F;
 			remoteInfo = Upsurge;
 		};
+		EF7289412B9DA0B000D73112 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAB11F9C200EF5D800354701 /* Pods.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 887676BBC4792A9EB73C6DFF2748F51D;
+			remoteInfo = OpenCV;
+		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -145,8 +152,9 @@
 		CAB11F9D200EF5D800354701 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				CAB11FA8200EF5D800354701 /* Pods_SwiftOpenPose.framework */,
-				CAB11FAA200EF5D800354701 /* Upsurge.framework */,
+				EF7289422B9DA0B000D73112 /* OpenCV */,
+				CAB11FA8200EF5D800354701 /* Pods-SwiftOpenPose */,
+				CAB11FAA200EF5D800354701 /* Upsurge */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -215,7 +223,6 @@
 				CAB3E55A1FBAA50700ECCD30 /* Copy Freamworks */,
 				CA9A64E31FBAB32900F21802 /* CopyFiles */,
 				6342E78AC6AA68CEED177837 /* [CP] Embed Pods Frameworks */,
-				AB02CFB7B3DF08E9FFA577D6 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -268,18 +275,28 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		CAB11FA8200EF5D800354701 /* Pods_SwiftOpenPose.framework */ = {
+		CAB11FA8200EF5D800354701 /* Pods-SwiftOpenPose */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = "Pods-SwiftOpenPose";
 			path = Pods_SwiftOpenPose.framework;
 			remoteRef = CAB11FA7200EF5D800354701 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		CAB11FAA200EF5D800354701 /* Upsurge.framework */ = {
+		CAB11FAA200EF5D800354701 /* Upsurge */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
+			name = Upsurge;
 			path = Upsurge.framework;
 			remoteRef = CAB11FA9200EF5D800354701 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EF7289422B9DA0B000D73112 /* OpenCV */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			name = OpenCV;
+			path = opencv2.framework;
+			remoteRef = EF7289412B9DA0B000D73112 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -326,7 +343,7 @@
 			files = (
 			);
 			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOpenPose/Pods-SwiftOpenPose-frameworks.sh",
+				"${PODS_ROOT}/Target Support Files/Pods-SwiftOpenPose/Pods-SwiftOpenPose-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/OpenCV/opencv2.framework",
 				"${BUILT_PRODUCTS_DIR}/Upsurge/Upsurge.framework",
 			);
@@ -337,22 +354,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOpenPose/Pods-SwiftOpenPose-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
-		};
-		AB02CFB7B3DF08E9FFA577D6 /* [CP] Copy Pods Resources */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputPaths = (
-			);
-			name = "[CP] Copy Pods Resources";
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SwiftOpenPose/Pods-SwiftOpenPose-resources.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-SwiftOpenPose/Pods-SwiftOpenPose-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */
@@ -444,7 +446,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -497,7 +499,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -514,14 +516,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3FCTVM259;
+				DEVELOPMENT_TEAM = BUMDMHL9XB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftOpenPose/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.infocom.tpo.o2.SwiftOpenPose;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spsarolkar.SwiftOpenPose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE = "";
 				PROVISIONING_PROFILE_SPECIFIER = "";
@@ -541,14 +543,14 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3FCTVM259;
+				DEVELOPMENT_TEAM = BUMDMHL9XB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(PROJECT_DIR)",
 				);
 				INFOPLIST_FILE = SwiftOpenPose/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.infocom.tpo.o2.SwiftOpenPose;
+				PRODUCT_BUNDLE_IDENTIFIER = com.spsarolkar.SwiftOpenPose;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "SwiftOpenPose/SwiftOpenPose-Bridging-Header.h";

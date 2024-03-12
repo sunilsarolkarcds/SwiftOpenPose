@@ -3,102 +3,27 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 48;
+	objectVersion = 60;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		9D05A44220074BF3005DE101 /* MobileOpenPose.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 9D05A44120074BF3005DE101 /* MobileOpenPose.mlmodel */; };
-		9D260F5B1FE8A1EF003A02DC /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D260F571FE8A1EE003A02DC /* opencv2.framework */; };
-		9DDE38411FFF455500CEF012 /* IteratorTools.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDE38291FFF44FF00CEF012 /* IteratorTools.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		9DDE38431FFF457B00CEF012 /* Upsurge.framework in Copy Frameworks */ = {isa = PBXBuildFile; fileRef = 9DDE383A1FFF450800CEF012 /* Upsurge.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		CA1155CF1FDE4CEE003E751E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1155CE1FDE4CEE003E751E /* AppDelegate.swift */; };
-		CA1155D11FDE4CEE003E751E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1155D01FDE4CEE003E751E /* ViewController.swift */; };
 		CA1155D41FDE4CEE003E751E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1155D21FDE4CEE003E751E /* Main.storyboard */; };
 		CA1155D61FDE4CEE003E751E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CA1155D51FDE4CEE003E751E /* Assets.xcassets */; };
 		CA1155D91FDE4CEE003E751E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CA1155D71FDE4CEE003E751E /* LaunchScreen.storyboard */; };
 		CA1155E31FDE4D06003E751E /* OpenCVWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = CA1155E21FDE4D06003E751E /* OpenCVWrapper.mm */; };
-		CA1155E51FDE4D77003E751E /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1155E41FDE4D77003E751E /* Common.swift */; };
+		EF4B709A2B9DD79300705F07 /* IteratorTools in Frameworks */ = {isa = PBXBuildFile; productRef = EF4B70992B9DD79300705F07 /* IteratorTools */; };
+		EF4B709D2B9DD7CB00705F07 /* Upsurge in Frameworks */ = {isa = PBXBuildFile; productRef = EF4B709C2B9DD7CB00705F07 /* Upsurge */; };
+		EF4B70A82B9E0C4100705F07 /* opencv2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF4B70A72B9E0C4000705F07 /* opencv2.framework */; };
+		EF7289662B9DD2B700D73112 /* Common.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1155E41FDE4D77003E751E /* Common.swift */; };
+		EF7289672B9DD2B900D73112 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA1155D01FDE4CEE003E751E /* ViewController.swift */; };
 /* End PBXBuildFile section */
-
-/* Begin PBXContainerItemProxy section */
-		9DDE38281FFF44FF00CEF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DDE38231FFF44FE00CEF012 /* IteratorTools.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 89E8F19E1F4F2CC9000FC583;
-			remoteInfo = IteratorTools;
-		};
-		9DDE382A1FFF44FF00CEF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DDE38231FFF44FE00CEF012 /* IteratorTools.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 89E8F1A71F4F2CC9000FC583;
-			remoteInfo = IteratorToolsTests;
-		};
-		9DDE38351FFF450800CEF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 614ACA701BD1CB7B00A1C13E;
-			remoteInfo = "Upsurge OSX";
-		};
-		9DDE38371FFF450800CEF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 614ACA7A1BD1CB7B00A1C13E;
-			remoteInfo = "UpsurgeTests OSX";
-		};
-		9DDE38391FFF450800CEF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 614ACACA1BD1CBF300A1C13E;
-			remoteInfo = "Upsurge iOS";
-		};
-		9DDE383B1FFF450800CEF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 614ACAD31BD1CBF300A1C13E;
-			remoteInfo = "UpsurgeTests iOS";
-		};
-		9DDE383D1FFF450800CEF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 61D0466D1C48BA5B00DB7279;
-			remoteInfo = "Upsurge tvOS";
-		};
-		9DDE383F1FFF450800CEF012 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */;
-			proxyType = 2;
-			remoteGlobalIDString = 61D046761C48BA5B00DB7279;
-			remoteInfo = "UpsurgeTests tvOS";
-		};
-/* End PBXContainerItemProxy section */
-
-/* Begin PBXCopyFilesBuildPhase section */
-		CA11560B1FDE4EEE003E751E /* Copy Frameworks */ = {
-			isa = PBXCopyFilesBuildPhase;
-			buildActionMask = 2147483647;
-			dstPath = "";
-			dstSubfolderSpec = 10;
-			files = (
-				9DDE38431FFF457B00CEF012 /* Upsurge.framework in Copy Frameworks */,
-				9DDE38411FFF455500CEF012 /* IteratorTools.framework in Copy Frameworks */,
-			);
-			name = "Copy Frameworks";
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		9D05A44120074BF3005DE101 /* MobileOpenPose.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = MobileOpenPose.mlmodel; sourceTree = "<group>"; };
-		9D260F571FE8A1EE003A02DC /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
-		9DDE38231FFF44FE00CEF012 /* IteratorTools.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = IteratorTools.xcodeproj; path = "../../../SRC/IteratorTools-master/IteratorTools.xcodeproj"; sourceTree = "<group>"; };
-		9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = Upsurge.xcodeproj; path = "../../../SRC/Upsurge-master/Upsurge.xcodeproj"; sourceTree = "<group>"; };
+		9D260F571FE8A1EE003A02DC /* OpenCV */ = {isa = PBXFileReference; lastKnownFileType = folder; name = OpenCV; path = ../../Pods/OpenCV; sourceTree = "<group>"; };
+		9DDE382C1FFF450800CEF012 /* Upsurge */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = Upsurge; path = ../../../Upsurge; sourceTree = "<group>"; };
 		CA1155CB1FDE4CEE003E751E /* BoneDetecter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BoneDetecter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CA1155CE1FDE4CEE003E751E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CA1155D01FDE4CEE003E751E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -110,6 +35,9 @@
 		CA1155E11FDE4D06003E751E /* OpenCVWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OpenCVWrapper.h; sourceTree = "<group>"; };
 		CA1155E21FDE4D06003E751E /* OpenCVWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OpenCVWrapper.mm; sourceTree = "<group>"; };
 		CA1155E41FDE4D77003E751E /* Common.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Common.swift; sourceTree = "<group>"; };
+		EF4B70A12B9DDE7700705F07 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = opencv2.framework; path = ../../../opencv2.framework; sourceTree = "<group>"; };
+		EF4B70A52B9DE91400705F07 /* include */ = {isa = PBXFileReference; lastKnownFileType = folder; name = include; path = ../../Pods/OpenCV/include; sourceTree = "<group>"; };
+		EF4B70A72B9E0C4000705F07 /* opencv2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = opencv2.framework; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,7 +45,9 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9D260F5B1FE8A1EF003A02DC /* opencv2.framework in Frameworks */,
+				EF4B70A82B9E0C4100705F07 /* opencv2.framework in Frameworks */,
+				EF4B709D2B9DD7CB00705F07 /* Upsurge in Frameworks */,
+				EF4B709A2B9DD79300705F07 /* IteratorTools in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -127,38 +57,18 @@
 		9D260F511FE8A1BC003A02DC /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				EF4B70A72B9E0C4000705F07 /* opencv2.framework */,
+				EF4B70A12B9DDE7700705F07 /* opencv2.framework */,
 			);
 			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		9DDE38241FFF44FE00CEF012 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9DDE38291FFF44FF00CEF012 /* IteratorTools.framework */,
-				9DDE382B1FFF44FF00CEF012 /* IteratorToolsTests.xctest */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		9DDE382D1FFF450800CEF012 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				9DDE38361FFF450800CEF012 /* Upsurge.framework */,
-				9DDE38381FFF450800CEF012 /* UpsurgeTests OSX.xctest */,
-				9DDE383A1FFF450800CEF012 /* Upsurge.framework */,
-				9DDE383C1FFF450800CEF012 /* UpsurgeTests iOS.xctest */,
-				9DDE383E1FFF450800CEF012 /* Upsurge.framework */,
-				9DDE38401FFF450800CEF012 /* UpsurgeTests tvOS.xctest */,
-			);
-			name = Products;
 			sourceTree = "<group>";
 		};
 		CA1155C21FDE4CEE003E751E = {
 			isa = PBXGroup;
 			children = (
-				9DDE38231FFF44FE00CEF012 /* IteratorTools.xcodeproj */,
-				9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */,
-				9D260F571FE8A1EE003A02DC /* opencv2.framework */,
+				EF4B70A52B9DE91400705F07 /* include */,
+				9DDE382C1FFF450800CEF012 /* Upsurge */,
+				9D260F571FE8A1EE003A02DC /* OpenCV */,
 				CA1155CD1FDE4CEE003E751E /* BoneDetecter */,
 				CA1155CC1FDE4CEE003E751E /* Products */,
 				9D260F511FE8A1BC003A02DC /* Frameworks */,
@@ -201,13 +111,16 @@
 				CA1155C71FDE4CEE003E751E /* Sources */,
 				CA1155C81FDE4CEE003E751E /* Frameworks */,
 				CA1155C91FDE4CEE003E751E /* Resources */,
-				CA11560B1FDE4EEE003E751E /* Copy Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
 			name = BoneDetecter;
+			packageProductDependencies = (
+				EF4B70992B9DD79300705F07 /* IteratorTools */,
+				EF4B709C2B9DD7CB00705F07 /* Upsurge */,
+			);
 			productName = VNOpenPose;
 			productReference = CA1155CB1FDE4CEE003E751E /* BoneDetecter.app */;
 			productType = "com.apple.product-type.application";
@@ -220,7 +133,7 @@
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
 				LastUpgradeCheck = 0920;
-				ORGANIZATIONNAME = tpomac2017;
+				ORGANIZATIONNAME = com.spsarolkar;
 				TargetAttributes = {
 					CA1155CA1FDE4CEE003E751E = {
 						CreatedOnToolsVersion = 9.2;
@@ -230,7 +143,7 @@
 				};
 			};
 			buildConfigurationList = CA1155C61FDE4CEE003E751E /* Build configuration list for PBXProject "BoneDetecter" */;
-			compatibilityVersion = "Xcode 8.0";
+			compatibilityVersion = "Xcode 13.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -238,83 +151,18 @@
 				Base,
 			);
 			mainGroup = CA1155C21FDE4CEE003E751E;
+			packageReferences = (
+				EF4B70982B9DD79300705F07 /* XCLocalSwiftPackageReference "../../../IteratorTools" */,
+				EF4B709B2B9DD7CB00705F07 /* XCLocalSwiftPackageReference "../../../Upsurge" */,
+			);
 			productRefGroup = CA1155CC1FDE4CEE003E751E /* Products */;
 			projectDirPath = "";
-			projectReferences = (
-				{
-					ProductGroup = 9DDE38241FFF44FE00CEF012 /* Products */;
-					ProjectRef = 9DDE38231FFF44FE00CEF012 /* IteratorTools.xcodeproj */;
-				},
-				{
-					ProductGroup = 9DDE382D1FFF450800CEF012 /* Products */;
-					ProjectRef = 9DDE382C1FFF450800CEF012 /* Upsurge.xcodeproj */;
-				},
-			);
 			projectRoot = "";
 			targets = (
 				CA1155CA1FDE4CEE003E751E /* BoneDetecter */,
 			);
 		};
 /* End PBXProject section */
-
-/* Begin PBXReferenceProxy section */
-		9DDE38291FFF44FF00CEF012 /* IteratorTools.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = IteratorTools.framework;
-			remoteRef = 9DDE38281FFF44FF00CEF012 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9DDE382B1FFF44FF00CEF012 /* IteratorToolsTests.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = IteratorToolsTests.xctest;
-			remoteRef = 9DDE382A1FFF44FF00CEF012 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9DDE38361FFF450800CEF012 /* Upsurge.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Upsurge.framework;
-			remoteRef = 9DDE38351FFF450800CEF012 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9DDE38381FFF450800CEF012 /* UpsurgeTests OSX.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "UpsurgeTests OSX.xctest";
-			remoteRef = 9DDE38371FFF450800CEF012 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9DDE383A1FFF450800CEF012 /* Upsurge.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Upsurge.framework;
-			remoteRef = 9DDE38391FFF450800CEF012 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9DDE383C1FFF450800CEF012 /* UpsurgeTests iOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "UpsurgeTests iOS.xctest";
-			remoteRef = 9DDE383B1FFF450800CEF012 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9DDE383E1FFF450800CEF012 /* Upsurge.framework */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.framework;
-			path = Upsurge.framework;
-			remoteRef = 9DDE383D1FFF450800CEF012 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-		9DDE38401FFF450800CEF012 /* UpsurgeTests tvOS.xctest */ = {
-			isa = PBXReferenceProxy;
-			fileType = wrapper.cfbundle;
-			path = "UpsurgeTests tvOS.xctest";
-			remoteRef = 9DDE383F1FFF450800CEF012 /* PBXContainerItemProxy */;
-			sourceTree = BUILT_PRODUCTS_DIR;
-		};
-/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		CA1155C91FDE4CEE003E751E /* Resources */ = {
@@ -334,9 +182,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA1155E51FDE4D77003E751E /* Common.swift in Sources */,
+				EF7289672B9DD2B900D73112 /* ViewController.swift in Sources */,
+				EF7289662B9DD2B700D73112 /* Common.swift in Sources */,
 				9D05A44220074BF3005DE101 /* MobileOpenPose.mlmodel in Sources */,
-				CA1155D11FDE4CEE003E751E /* ViewController.swift in Sources */,
 				CA1155CF1FDE4CEE003E751E /* AppDelegate.swift in Sources */,
 				CA1155E31FDE4D06003E751E /* OpenCVWrapper.mm in Sources */,
 			);
@@ -367,7 +215,7 @@
 		CA1155DB1FDE4CEE003E751E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -412,7 +260,8 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -424,7 +273,7 @@
 		CA1155DC1FDE4CEE003E751E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
+				ALWAYS_SEARCH_USER_PATHS = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
@@ -463,10 +312,12 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.2;
+				HEADER_SEARCH_PATHS = /usr/local/include/;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -478,16 +329,20 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3FCTVM259;
+				DEVELOPMENT_TEAM = BUMDMHL9XB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/**",
 					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = BoneDetecter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tpo.maeda.BoneDetecter;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spsarolkar.BoneDetecter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_OBJC_BRIDGING_HEADER = "BoneDetecter/BoneDetecter-Bridging-Header.h";
@@ -504,20 +359,25 @@
 				CLANG_ENABLE_MODULES = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = U3FCTVM259;
+				DEVELOPMENT_TEAM = BUMDMHL9XB;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
+					"$(PROJECT_DIR)/**",
 					"$(PROJECT_DIR)",
 				);
 				GCC_OPTIMIZATION_LEVEL = s;
 				INFOPLIST_FILE = BoneDetecter/Info.plist;
-				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
-				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.tpo.maeda.BoneDetecter;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.spsarolkar.BoneDetecter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_COMPILATION_MODE = wholemodule;
 				SWIFT_OBJC_BRIDGING_HEADER = "BoneDetecter/BoneDetecter-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -545,6 +405,28 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCLocalSwiftPackageReference section */
+		EF4B70982B9DD79300705F07 /* XCLocalSwiftPackageReference "../../../IteratorTools" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../IteratorTools;
+		};
+		EF4B709B2B9DD7CB00705F07 /* XCLocalSwiftPackageReference "../../../Upsurge" */ = {
+			isa = XCLocalSwiftPackageReference;
+			relativePath = ../../../Upsurge;
+		};
+/* End XCLocalSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		EF4B70992B9DD79300705F07 /* IteratorTools */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = IteratorTools;
+		};
+		EF4B709C2B9DD7CB00705F07 /* Upsurge */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = Upsurge;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CA1155C31FDE4CEE003E751E /* Project object */;
 }

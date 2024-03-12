@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:/Users/maeda/Work/vnopenpose-master@910cd6d8160/BoneDetecter.xcodeproj">
+      location = "self:">
    </FileRef>
 </Workspace>
